@@ -27,9 +27,12 @@ namespace BinariNegativi1
             somma = somma + value;
             Console.WriteLine($"{value} è l'opposto del numero inserito e {somma} è la somma tra il valore inserito e l'opposto");
             long number = 55555;
-            Console.WriteLine(Convert.ToString(number, 2));
-            short number2 = (short)number;
-            Console.WriteLine(number2);
+            Console.WriteLine(Convert.ToString(number, 2)); //number si converte in binario
+            short number1 = (short)number; //la variabile number diventa short
+            Console.WriteLine(number1); //stampa il valore di number1, pero' è sbagliato perchè il numero long è 55555 quando
+                                        //le variabili short vanno da da -32,768 a 32,767 e quindi va in overflow e stampa -9981.
+                                        
+            Console.ReadLine();
         }
     }
 }
