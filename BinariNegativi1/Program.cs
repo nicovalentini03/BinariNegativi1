@@ -19,11 +19,13 @@ namespace BinariNegativi1
             Console.WriteLine(Convert.ToString(b, 2));
             Console.WriteLine(Convert.ToString(c, 2));
             //nella riga 15 il numero 128 viene converito in binario e poi stampato
-            int value = 31;
+            Console.WriteLine("Inserisci un numero intero");
+            int value = int.Parse(Console.ReadLine());
             int somma = value;
             value = ~value + 1;//NOT
             //value = value+1;
             somma = somma + value;
+            Console.WriteLine($"{value} è l'opposto del numero inserito e {somma} è la somma tra il valore inserito e l'opposto");
             long number = 55555;
             Console.WriteLine(Convert.ToString(number, 2));
             short number2 = (short)number;
