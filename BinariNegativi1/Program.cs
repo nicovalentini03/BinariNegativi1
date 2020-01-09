@@ -30,3 +30,4 @@ namespace BinariNegativi1
             Console.WriteLine(number2);
         }
     }
+}
